@@ -1,17 +1,16 @@
 {
-  "name": "@pfx/pfrc",
-  "version": "0.4.0",
-  "description": "A sample .pfrc module for pf, the fast and extensible command-line data (e.g. JSON) processor and transformer",
+  "name": "pf-sandbox",
+  "version": "0.5.1",
+  "description": "A sandbox for developing plugins for pf, the fast and extensible command-line data (e.g. JSON) processor and transformer",
   "keywords": [
     "pf",
     "parser-functions",
     "json",
-    "streaming",
     "lexer",
     "parser",
     "marshaller"
   ],
-  "homepage": "https://github.com/Yord/pfx-pfrc",
+  "homepage": "https://github.com/Yord/pf-sandbox",
   "bugs": {
     "url": "https://github.com/Yord/pf/issues"
   },
@@ -23,7 +22,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yord/pfx-pfrc.git"
+    "url": "https://github.com/Yord/pf-sandbox.git"
   },
   "scripts": {
     "start": "./index.js",
