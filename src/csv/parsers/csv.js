@@ -16,23 +16,31 @@ module.exports = {
         let from    = 0
 
         for (let at = 0; at < token.length; at++) {
-          const ch       = token.charAt(at)
+          const ch         = token.charAt(at)
 
-          let isEscaped  = false
-          let inString   = false
-          let valueFound = false
+          let mayBeEscaped = false
+          let inString     = false
+          let valueFound   = false
 
           if (inString) {
-            if        (isEscaped)         isEscaped  = false
-            else {
-              if      (ch === '"')        inString   = false // must support escaping " with ""!
-              else if (ch === '\\')       isEscaped  = true
+            if (mayBeEscaped) {
+              if (ch === _delimiter) {
+                valueFound   = true
+                mayBeEscaped = false
+              } else if (ch !== '"') {
+                mayBeEscaped = false
+                inString     = false
+              } else if (ch === '"') {
+                mayBeEscaped = false
+              }
+            } else {
+              if (ch === '"') mayBeEscaped = true
             }
           } else {
-            if        (ch === '"')        inString   = true
-            else if   (ch === _delimiter) valueFound = true
+            if (ch === '"')             inString   = true
+            else if (ch === _delimiter) valueFound = true
           }
-
+          
           if (valueFound) {
             valueFound  = false
             const value = token.slice(from, at)
