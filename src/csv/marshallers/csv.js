@@ -1,7 +1,7 @@
 module.exports = {
   name: 'csv',
   desc: 'is a csv marshaller.', // does not support embedded line breaks
-  func: ({mdelimiter, D, mheader, H}) => {
+  func: ({delimiter, mdelimiter, D, header, mheader, H}) => {
     const _delimiter   = mdelimiter || delimiter || D || ','
     const _header      = mheader    || header    || H || '[]'
     
