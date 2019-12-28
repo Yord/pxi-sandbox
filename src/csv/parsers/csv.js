@@ -1,0 +1,73 @@
+module.exports = {
+  name: 'csv',
+  desc: 'is a csv parser.', // does not support embedded line breaks
+  func: ({delimiter, D, header, H}) => {
+    const _delimiter = delimiter || D || ','
+    const _header    = header    || H || '[]'
+    let keys         = JSON.parse(_header)
+
+    return (tokens, lines) => {
+      const err   = [] // add error handling
+      const jsons = []
+      
+      for (let line = 0; line < tokens.length; line++) {
+        const token = tokens[line]
+        let values  = []
+        let from    = 0
+
+        for (let at = 0; at < token.length; at++) {
+          const ch       = token.charAt(at)
+
+          let isEscaped  = false
+          let inString   = false
+          let valueFound = false
+
+          if (inString) {
+            if        (isEscaped)         isEscaped  = false
+            else {
+              if      (ch === '"')        inString   = false // must support escaping " with ""!
+              else if (ch === '\\')       isEscaped  = true
+            }
+          } else {
+            if        (ch === '"')        inString   = true
+            else if   (ch === _delimiter) valueFound = true
+          }
+
+          if (valueFound) {
+            valueFound  = false
+            const value = token.slice(from, at)
+
+            values.push(value)
+
+            from        = at + 1
+          }
+
+          if (at === token.length - 1) {
+            const value = token.slice(from)
+            
+            values.push(value)
+          }
+        }
+
+        let json = {}
+
+        if (keys.length === 0) keys = values
+        else {
+          for (let jndex = 0; jndex < keys.length; jndex++) {
+            if (keys.length === values.length) {
+              const key   = keys[jndex]
+              const value = values[jndex]
+              json[key]   = value
+            } else {
+              // fail otherwise
+            }
+          }
+  
+          jsons.push(json)
+        }
+      }
+
+      return {err, jsons}
+    }
+  }
+}
