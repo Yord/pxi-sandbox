@@ -1,9 +1,9 @@
 module.exports = {
   name: 'csv',
   desc: 'is a csv marshaller.', // does not support embedded line breaks
-  func: ({mdelimiter, D, mheader, H}) => {
-    const _delimiter   = mdelimiter || D || ','
-    const _mheader     = mheader    || H || '[]'
+  func: ({delimiter, mdelimiter, D, header, mheader, H}) => {
+    const _delimiter   = mdelimiter || delimiter || D || ','
+    const _header      = mheader    || header    || H || '[]'
     
     let keysNotWritten = true
 
@@ -14,7 +14,7 @@ module.exports = {
       if (keysNotWritten) {
         keysNotWritten = false
 
-        let keys = JSON.parse(_mheader)
+        let keys = JSON.parse(_header)
         if (keys.length === 0) {
           if (values.length > 0) {
             const value = values[0]
@@ -41,12 +41,14 @@ module.exports = {
           let item2      = ''
           for (let undex = 0; undex < item.length; undex++) {
             const ch = item[undex]
-            if (ch === _delimiter)   needQuotes = true
-            else if (ch === '"') {
-                                     needQuotes = true
-                                     item2 += '""'
-            } else if (ch === '\n')  item2 += ' '
-            else                     item2 += ch
+            if (ch === _delimiter) {
+              needQuotes = true
+              item2 += ch
+            } else if (ch === '"') {
+              needQuotes = true
+              item2 += '""'
+            } else if (ch === '\n') item2 += ' '
+            else item2 += ch
           }
 
           if (needQuotes) line.push('"' + item2 + '"')
