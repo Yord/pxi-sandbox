@@ -41,12 +41,14 @@ module.exports = {
           let item2      = ''
           for (let undex = 0; undex < item.length; undex++) {
             const ch = item[undex]
-            if (ch === _delimiter)   needQuotes = true
-            else if (ch === '"') {
-                                     needQuotes = true
-                                     item2 += '""'
-            } else if (ch === '\n')  item2 += ' '
-            else                     item2 += ch
+            if (ch === _delimiter) {
+              needQuotes = true
+              item2 += ch
+            } else if (ch === '"') {
+              needQuotes = true
+              item2 += '""'
+            } else if (ch === '\n') item2 += ' '
+            else item2 += ch
           }
 
           if (needQuotes) line.push('"' + item2 + '"')
