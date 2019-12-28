@@ -1,9 +1,9 @@
 module.exports = {
   name: 'csv',
   desc: 'is a csv parser.', // does not support embedded line breaks
-  func: ({delimiter, D, header, H}) => {
-    const _delimiter = delimiter || D || ','
-    const _header    = header    || H || '[]'
+  func: ({delimiter, pdelimiter, D, header, pheader, H}) => {
+    const _delimiter = pdelimiter || delimiter || D || ','
+    const _header    = pheader    || header    || H || '[]'
     let keys         = JSON.parse(_header)
 
     return (tokens, lines) => {
