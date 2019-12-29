@@ -1,4 +1,3 @@
-const csv     = require('./src/csv')
 const xml     = require('./src/xml')
 const geojson = require('./src/geojson')
 const cata    = require('./src/cata')
@@ -9,7 +8,6 @@ const getTime = json => json.time
 
 module.exports = {
   plugins:  [
-    csv,
     xml,
     geojson,
     cata
