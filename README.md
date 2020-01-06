@@ -4,12 +4,12 @@
 
 See the [`pf` github repository][pf] for more details!
 
-[![node version][node-shield]][node]
-[![license][license-shield]][license]
-[![PRs Welcome][prs-shield]][pfx-how-to-contribute]
-[![linux unit tests status][linux-unit-tests-shield]][actions]
-[![macos unit tests status][macos-unit-tests-shield]][actions]
-[![windows unit tests status][windows-unit-tests-shield]][actions]
+[![node version][shield-node]][node]
+[![license][shield-license]][license]
+[![PRs Welcome][shield-prs]][contribute]
+[![linux unit tests status][shield-unit-tests-linux]][actions]
+[![macos unit tests status][shield-unit-tests-macos]][actions]
+[![windows unit tests status][shield-unit-tests-windows]][actions]
 
 ## Installation
 
@@ -26,28 +26,28 @@ $ cd ~/.pfrc
 $ npm install
 ```
 
-For a much more detailed description, see the [`.pfrc` module documentation][pf-pfrc-module] in the [`pf` repository][pf].
+For a much more detailed description, see the [`.pfrc` module documentation][pfrc-module].
 
 ## Reporting Issues
 
-Please report issues [at the `pf` repository][issues]!
+Please report issues [in the tracker][issues]!
 
 ## License
 
 `pf-sandbox` is [MIT licensed][license].
 
-[npm-package]: https://www.npmjs.com/package/@pfx/pf
-[license]: https://github.com/Yord/pf-sandbox/blob/master/LICENSE
-[teaser]: ./teaser.gif
-[pf]: https://github.com/Yord/pf
 [actions]: https://github.com/Yord/pf-sandbox/actions
-[license-shield]: https://img.shields.io/badge/license-MIT-yellow.svg?labelColor=313A42
+[contribute]: https://github.com/Yord/pf
 [issues]: https://github.com/Yord/pf/issues
-[node-shield]: https://img.shields.io/node/v/@pfx/pf?color=red&labelColor=313A42
+[license]: https://github.com/Yord/pf-sandbox/blob/master/LICENSE
 [node]: https://nodejs.org/
-[prs-shield]: https://img.shields.io/badge/PRs-welcome-green.svg?labelColor=313A42
-[pfx-how-to-contribute]: https://github.com/Yord/pf
-[linux-unit-tests-shield]: https://github.com/Yord/pf-sandbox/workflows/linux/badge.svg?branch=master
-[macos-unit-tests-shield]: https://github.com/Yord/pf-sandbox/workflows/macos/badge.svg?branch=master
-[windows-unit-tests-shield]: https://github.com/Yord/pf-sandbox/workflows/windows/badge.svg?branch=master
-[pf-pfrc-module]: https://github.com/Yord/pf#pfrc-module
+[npm-package]: https://www.npmjs.com/package/@pfx/pf
+[pf]: https://github.com/Yord/pf
+[pfrc-module]: https://github.com/Yord/pf#pfrc-module
+[shield-license]: https://img.shields.io/badge/license-MIT-yellow.svg?labelColor=313A42
+[shield-node]: https://img.shields.io/node/v/@pfx/pf?color=red&labelColor=313A42
+[shield-prs]: https://img.shields.io/badge/PRs-welcome-green.svg?labelColor=313A42
+[shield-unit-tests-linux]: https://github.com/Yord/pf-sandbox/workflows/linux/badge.svg?branch=master
+[shield-unit-tests-macos]: https://github.com/Yord/pf-sandbox/workflows/macos/badge.svg?branch=master
+[shield-unit-tests-windows]: https://github.com/Yord/pf-sandbox/workflows/windows/badge.svg?branch=master
+[teaser]: ./teaser.gif
