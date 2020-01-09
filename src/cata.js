@@ -29,5 +29,5 @@ module.exports = {
   chunkers:      [],
   deserializers: [],
   applicators:   [scan],
-  marshallers:   []
+  serializers:   []
 }

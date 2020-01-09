@@ -1,4 +1,4 @@
-const xmlMarshaller = {
+const xmlSerializer = {
   name: 'xml',
   desc: 'foo.',
   func: ({xmlRoot, X}) => {
@@ -28,5 +28,5 @@ module.exports = {
   chunkers:      [],
   deserializers: [],
   applicators:   [],
-  marshallers:   [xmlMarshaller]
+  serializers:   [xmlSerializer]
 }
