@@ -38,6 +38,6 @@ const geojsonSerializer = {
 module.exports = {
   chunkers:      [],
   deserializers: [],
-  applicators:   [],
+  appliers:      [],
   serializers:   [geojsonSerializer]
 }

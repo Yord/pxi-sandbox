@@ -27,6 +27,6 @@ const xmlSerializer = {
 module.exports = {
   chunkers:      [],
   deserializers: [],
-  applicators:   [],
+  appliers:      [],
   serializers:   [xmlSerializer]
 }

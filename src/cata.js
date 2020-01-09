@@ -28,6 +28,6 @@ const scan = {
 module.exports = {
   chunkers:      [],
   deserializers: [],
-  applicators:   [scan],
+  appliers:      [scan],
   serializers:   []
 }
