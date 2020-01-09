@@ -25,7 +25,7 @@ const xmlMarshaller = {
 }
 
 module.exports = {
-  lexers:      [],
+  chunkers:    [],
   parsers:     [],
   applicators: [],
   marshallers: [xmlMarshaller]

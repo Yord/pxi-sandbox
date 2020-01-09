@@ -36,7 +36,7 @@ const geojsonMarshaller = {
 }
 
 module.exports = {
-  lexers:      [],
+  chunkers:    [],
   parsers:     [],
   applicators: [],
   marshallers: [geojsonMarshaller]
