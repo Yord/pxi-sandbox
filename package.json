@@ -1,12 +1,16 @@
 {
   "name": "pxi-sandbox",
-  "version": "0.9.0",
-  "description": "A sandbox for developing plugins for pxi (pixie), the small, fast and magic command-line data processor",
+  "version": "0.9.1",
+  "description": "A sandbox for developing plugins for pxi (pixie), the small, fast and magical command-line data processor",
   "keywords": [
     "pxi",
     "pixie",
     "json",
     "csv",
+    "ssv",
+    "tsv",
+    "dsv",
+    "data-processing",
     "deserializer",
     "parser",
     "serializer",
@@ -33,7 +37,7 @@
   "engines": {
     "node": ">=8.3.0"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "geojson": "0.5.0",
     "js2xmlparser": "4.0.0"
