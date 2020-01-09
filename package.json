@@ -33,7 +33,7 @@
   "engines": {
     "node": ">=8.3.0"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "geojson": "0.5.0",
     "js2xmlparser": "4.0.0"
