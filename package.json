@@ -1,18 +1,20 @@
 {
-  "name": "pf-sandbox",
-  "version": "0.8.2",
-  "description": "A sandbox for developing plugins for pf, the fast and extensible command-line data (e.g. JSON) processor and transformer",
+  "name": "pxi-sandbox",
+  "version": "0.9.0",
+  "description": "A sandbox for developing plugins for pxi (pixie), the small, fast and magic command-line data processor",
   "keywords": [
-    "pf",
-    "parser-functions",
+    "pxi",
+    "pixie",
     "json",
-    "lexer",
+    "csv",
+    "deserializer",
     "parser",
+    "serializer",
     "marshaller"
   ],
-  "homepage": "https://github.com/Yord/pf-sandbox",
+  "homepage": "https://github.com/Yord/pxi-sandbox",
   "bugs": {
-    "url": "https://github.com/Yord/pf/issues"
+    "url": "https://github.com/Yord/pxi/issues"
   },
   "license": "MIT",
   "author": "Philipp Wille <philipp.y.wille@gmail.com> (https://github.com/Yord)",
@@ -22,7 +24,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Yord/pf-sandbox.git"
+    "url": "https://github.com/Yord/pxi-sandbox.git"
   },
   "scripts": {
     "start": "./index.js",

@@ -1,4 +1,4 @@
-const geojsonMarshaller = {
+const geojsonSerializer = {
   name: 'geojson',
   desc: 'foo.',
   func: ({replacer, R, spaces, S, includes, I, lat, lng}) => {
@@ -36,8 +36,8 @@ const geojsonMarshaller = {
 }
 
 module.exports = {
-  lexers:      [],
-  parsers:     [],
-  applicators: [],
-  marshallers: [geojsonMarshaller]
+  chunkers:      [],
+  deserializers: [],
+  appliers:      [],
+  serializers:   [geojsonSerializer]
 }
