@@ -50,4 +50,4 @@ Please report issues [in the tracker][issues]!
 [shield-unit-tests-linux]: https://github.com/Yord/pxi-sandbox/workflows/linux/badge.svg?branch=master
 [shield-unit-tests-macos]: https://github.com/Yord/pxi-sandbox/workflows/macos/badge.svg?branch=master
 [shield-unit-tests-windows]: https://github.com/Yord/pxi-sandbox/workflows/windows/badge.svg?branch=master
-[teaser]: https://github.com/Yord/pxi-sandbox/blob/master/teaser.gif
+[teaser]: https://github.com/Yord/pxi-sandbox/blob/master/teaser.gif?raw=true
