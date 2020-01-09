@@ -26,8 +26,8 @@ const scan = {
 }
 
 module.exports = {
-  chunkers:    [],
-  parsers:     [],
-  applicators: [scan],
-  marshallers: []
+  chunkers:      [],
+  deserializers: [],
+  applicators:   [scan],
+  marshallers:   []
 }
