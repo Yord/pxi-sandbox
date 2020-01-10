@@ -1,6 +1,6 @@
 ![pxi-sandbox teaser][teaser]
 
-🧚`pxi-sandbox` is a sandbox for developing plugins for `pxi` (pixie), the small, fast and magical command-line data processor.
+🧚`pxi-sandbox` is a sandbox for developing plugins for `pxi` (pixie), the small, fast, and magical command-line data processor.
 
 See the [`pxi` github repository][pxi] for more details!
 
