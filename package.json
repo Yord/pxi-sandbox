@@ -1,6 +1,6 @@
 {
   "name": "pxi-sandbox",
-  "version": "0.9.4",
+  "version": "0.10.0",
   "description": "A sandbox for developing plugins for pxi (pixie), the small, fast, and magical command-line data processor",
   "keywords": [
     "pxi",
@@ -45,7 +45,7 @@
     "ramda": "0.26.1"
   },
   "devDependencies": {
-    "fast-check": "1.20.1",
-    "jest": "24.9.0"
+    "fast-check": "1.23.0",
+    "jest": "25.1.0"
   }
 }
