@@ -1,6 +1,6 @@
 {
   "name": "pxi-sandbox",
-  "version": "0.9.4",
+  "version": "0.10.0",
   "description": "A sandbox for developing plugins for pxi (pixie), the small, fast, and magical command-line data processor",
   "keywords": [
     "pxi",
